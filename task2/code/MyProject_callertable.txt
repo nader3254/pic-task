@@ -1,0 +1,26 @@
+main
+	__CC2DW
+	init_btns
+	init_leds
+	init_T1
+	init_T0
+	Lcd_Init
+		Delay_5500us
+		Delay_1us
+	Lcd_Cmd
+		Delay_1us
+		Delay_5500us
+		Delay_50us
+	Lcd_Out
+		Lcd_Cmd
+			Delay_1us
+			Delay_5500us
+			Delay_50us
+		Lcd_Chr_CP
+			Lcd_Cmd
+				Delay_1us
+				Delay_5500us
+				Delay_50us
+interrupt
+	T1_callBack
+	T0_callback
